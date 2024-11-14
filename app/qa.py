@@ -14,25 +14,15 @@ from langchain_community.llms import OpenAI
 from langchain.chains import RetrievalQA
 from langchain_core.documents import Document
 
-import streamlit as st
-import openai
-
-
 PATH_SOURCES = "app/sources.txt"                # Path to the sources file
 PATH_VECTORSTORE = "/app/store"             # Path to the vector store
 
-#import dotenv
+import dotenv
 
-#dotenv.load_dotenv()
-
-openai_api_key = st.secrets["openai"]["api_key"]
-openai.api_key = openai_api_key 
-
-
+dotenv.load_dotenv()
 
 class QAModel:
     def __init__(self):
-        self.api_key = openai.api_key
         self.load_sources()
         self.split_document()
         self.store_vectors()
