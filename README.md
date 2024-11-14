@@ -23,7 +23,7 @@ This project is a QA (Question Answering) application that uses Langchain to pro
 
 ## Installation and use
 
-- Go to https://app-openai-langchain-coffe.streamlit.app/ to real deployment using Streamlit
+- DEMO: https://app-openai-langchain-coffe.streamlit.app/ deployment using Streamlit
 
 ### Prerequisites
 
