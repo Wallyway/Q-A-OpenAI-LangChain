@@ -14,7 +14,8 @@ from langchain_community.llms import OpenAI
 from langchain.chains import RetrievalQA
 from langchain_core.documents import Document
 
-import toml
+import stremlit as st
+
 
 PATH_SOURCES = "app/sources.txt"                # Path to the sources file
 PATH_VECTORSTORE = "/app/store"             # Path to the vector store
@@ -23,17 +24,14 @@ PATH_VECTORSTORE = "/app/store"             # Path to the vector store
 
 #dotenv.load_dotenv()
 
-# Load the config.toml file
-config = toml.load("./config.toml")
-
-# Access the API key from the config
-api_key = config["general"]["OPENAI_API_KEY"]
+openai_api_key = st.secrets["openai"]["api_key"]
+openai.api_key = openai_api_key 
 
 
 
 class QAModel:
     def __init__(self):
-        self.api_key = api_key
+        self.api_key = openai.api_key
         self.load_sources()
         self.split_document()
         self.store_vectors()
