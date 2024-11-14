@@ -24,7 +24,7 @@ PATH_VECTORSTORE = "/app/store"             # Path to the vector store
 #dotenv.load_dotenv()
 
 # Load the config.toml file
-config = toml.load("config.toml")
+config = toml.load(".streamlit/config.toml")
 
 # Access the API key from the config
 api_key = config["general"]["OPENAI_API_KEY"]
