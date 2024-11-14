@@ -14,7 +14,7 @@ from langchain_community.llms import OpenAI
 from langchain.chains import RetrievalQA
 from langchain_core.documents import Document
 
-PATH_SOURCES = "sources.txt"                # Path to the sources file
+PATH_SOURCES = "app/sources.txt"                # Path to the sources file
 PATH_VECTORSTORE = "/app/store"             # Path to the vector store
 
 import dotenv
