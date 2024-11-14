@@ -15,6 +15,7 @@ from langchain.chains import RetrievalQA
 from langchain_core.documents import Document
 
 import streamlit as st
+import openai
 
 
 PATH_SOURCES = "app/sources.txt"                # Path to the sources file
