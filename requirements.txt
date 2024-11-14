@@ -1,0 +1,10 @@
+chroma
+langchain               
+langchain-openai                 
+python-dotenv          
+bs4                     
+tiktoken                
+streamlit
+streamlit_chat   
+langchain-community
+langchain-cli              
