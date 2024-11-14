@@ -27,4 +27,4 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}  # Aquí accedes al secreto
         run: |
-          streamlit run app.py
+          streamlit run ./app/app.py

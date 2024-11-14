@@ -21,7 +21,9 @@ This project is a QA (Question Answering) application that uses Langchain to pro
 - `requirements.txt`: List of Python dependencies.
 - `.gitignore`: List of files/directories to ignore
 
-## Installation
+## Installation and use
+
+- Go to https://app-openai-langchain-coffe.streamlit.app/ to real deployment using Streamlit
 
 ### Prerequisites
 
