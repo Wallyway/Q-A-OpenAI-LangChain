@@ -3,7 +3,7 @@
 This project is a QA (Question Answering) application that uses Langchain to process and answer questions about coffee. The application is built using Streamlit for the web interface and integrates with OpenAI for generating responses.
 
 
-![alt text](app/img.jpeg)
+![alt text](img.jpeg)
 
 ## Project Structure
 
