@@ -7,7 +7,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-.streamlit/
+config.toml
 
 # C extensions
 *.so
