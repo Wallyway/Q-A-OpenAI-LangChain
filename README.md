@@ -1,6 +1,7 @@
 # QA Langchain Project
 
-This project is a QA (Question Answering) application that uses Langchain to process and answer questions about coffee. The application is built using Streamlit for the web interface and integrates with OpenAI for generating responses.
+This project is a QA (Question Answering) application that uses Langchain to process and answer questions about coffee. The application is built using Streamlit for the web interface and integrates with OpenAI for generating responses.YOUTUBE SOURCE: https://www.youtube.com/watch?v=swwXhsl-PJ4&t=209s
+
 
 
 ![alt text](img.jpeg)
