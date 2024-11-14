@@ -5,7 +5,7 @@
 #======================================================================
 
 
-
+# New migrations https://python.langchain.com/docs/versions/v0_2/
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import InMemoryVectorStore
 from langchain_openai import OpenAIEmbeddings
@@ -14,18 +14,19 @@ from langchain_community.llms import OpenAI
 from langchain.chains import RetrievalQA
 from langchain_core.documents import Document
 
-PATH_SOURCES = "app/sources.txt"                # Path to the sources file
-PATH_VECTORSTORE = "/app/store"             # Path to the vector store
+PATH_SOURCES = "app/sources.txt"                                                 # Path to the sources file
+PATH_VECTORSTORE = "/app/store"                                                  # Path to the vector store
 
-#import dotenv
+
 import os
 import streamlit as st
 
-#dotenv.load_dotenv()
+#import dotenv
+#dotenv.load_dotenv()                                                           # If want to run locally, uncomment this line
 
 
 
-
+# To run locally comment the below line and 'if' block
 openai_api_key = os.getenv('OPENAI_API_KEY')
 
 if openai_api_key is None:

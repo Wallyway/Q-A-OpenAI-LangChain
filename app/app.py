@@ -2,8 +2,6 @@
 import streamlit as st
 from streamlit_chat import message as st_message
 
-import toml
-
 from qa import QAModel
 
 
