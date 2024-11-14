@@ -7,4 +7,5 @@ tiktoken
 streamlit
 streamlit_chat   
 langchain-community
-langchain-cli              
+langchain-cli
+toml      

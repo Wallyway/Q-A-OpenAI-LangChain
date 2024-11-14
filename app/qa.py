@@ -17,14 +17,21 @@ from langchain_core.documents import Document
 PATH_SOURCES = "app/sources.txt"                # Path to the sources file
 PATH_VECTORSTORE = "/app/store"             # Path to the vector store
 
-import dotenv
+#import dotenv
 
-dotenv.load_dotenv()
+#dotenv.load_dotenv()
+
+# Load the config.toml file
+config = toml.load("config.toml")
+
+# Access the API key from the config
+api_key = config["general"]["OPENAI_API_KEY"]
 
 
 
 class QAModel:
     def __init__(self):
+        self.api_key = api_key
         self.load_sources()
         self.split_document()
         self.store_vectors()
