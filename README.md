@@ -3,6 +3,8 @@
 This project is a QA (Question Answering) application that uses Langchain to process and answer questions about coffee. The application is built using Streamlit for the web interface and integrates with OpenAI for generating responses.YOUTUBE SOURCE: https://www.youtube.com/watch?v=swwXhsl-PJ4&t=209s
 
 
+- DEMO: https://app-openai-langchain-coffe.streamlit.app/ deployment using Streamlit
+
 
 ![alt text](img.jpeg)
 
@@ -21,9 +23,7 @@ This project is a QA (Question Answering) application that uses Langchain to pro
 - `requirements.txt`: List of Python dependencies.
 - `.gitignore`: List of files/directories to ignore
 
-## Installation and use
-
-- DEMO: https://app-openai-langchain-coffe.streamlit.app/ deployment using Streamlit
+## Installation 
 
 ### Prerequisites
 
