@@ -17,9 +17,19 @@ from langchain_core.documents import Document
 PATH_SOURCES = "app/sources.txt"                # Path to the sources file
 PATH_VECTORSTORE = "/app/store"             # Path to the vector store
 
-import dotenv
+#import dotenv
+import os
+import streamlit as st
 
-dotenv.load_dotenv()
+#dotenv.load_dotenv()
+
+
+
+
+openai_api_key = os.getenv('OPENAI_API_KEY')
+
+if openai_api_key is None:
+    st.error('API key not found! Please set the OPENAI_API_KEY environment variable.')
 
 class QAModel:
     def __init__(self):
